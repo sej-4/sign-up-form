@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+:root {
+  --bg-color: rgb(249, 247, 247);
+}
+
 /* CSS Reset */
 *,
 *::before,
@@ -107,4 +111,29 @@ aside > img {
   a {
     color: white;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.call-to-action {
+  font-weight: bold;
+  font-size: 1.4rem;
+  height: 33vh;
+  background-color: var(--bg-color);
+  padding: 0 240px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.call-to-action p:first-child {
+  margin-bottom: 15px;
+}
+
+.call-to-action span {
+  font-style: italic;
 }
