@@ -32,9 +32,78 @@
         </p>
         <p>You <span>know</span> you want to.</p>
       </div>
-      <div></div>
       <div class="registration">
-        <button type="submit">Create Account</button>
+        <p>Let's do this!</p>
+        <form action="#" method="get" id="register">
+          <p>
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              maxlength="50"
+              required
+            />
+          </p>
+          <p>
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              maxlength="50"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="256"
+              autocomplete="email"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              minlength="10"
+              maxlength="15"
+              autocomplete="tel"
+              required
+            />
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </p>
+          <p>
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </p>
+        </form>
+      </div>
+      <div class="create-account">
+        <button type="submit" form="register">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </main>
