@@ -123,8 +123,8 @@ main {
 }
 
 main div {
-  height: 33vh;
   background-color: var(--bg-color);
+  flex: 1;
 }
 
 .call-to-action {
@@ -144,7 +144,7 @@ main div {
   font-style: italic;
 }
 
-.registration {
+.create-account {
   padding: var(--section-padding);
   button {
     appearance: none;
@@ -156,7 +156,7 @@ main div {
     font-size: 1.2rem;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
+    margin: 30px 0;
     cursor: pointer;
   }
   p {
@@ -168,4 +168,55 @@ main div {
     text-decoration: none;
     font-weight: bold;
   }
+}
+
+.registration-form {
+  padding: 20px 0 20px 40px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  > p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+form > p {
+  margin-bottom: 20px;
+  flex: 1 1 40%;
+}
+
+form > p:nth-child(odd) {
+  margin-right: 40px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+input {
+  appearance: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 4px 0 4px 10px;
+  width: 100%;
+}
+
+input:focus {
+  box-shadow: 0px 3px 2px 0px #f1f1f1;
+  outline-width: 1px;
+}
+
+input[type="password"]:user-invalid {
+  border: 1px solid red;
 }
